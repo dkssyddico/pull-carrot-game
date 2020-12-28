@@ -1,0 +1,138 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+* {
+  font-family: nunito;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url('img/background.png');
+  background-position: center;
+  background-size: cover;
+  font-family: nunito;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+.basicBtn {
+  width: 100px;
+  height: 350px;
+  margin: 50px auto 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btnStart {
+  outline: none;
+  cursor: pointer;
+  background-color: beige;
+  font-size: 40px;
+  padding: 10px 20px;
+  border: 4px solid black;
+  border-radius: 16px;
+  transition: transform 150ms ease-in;
+}
+
+.btnStart:hover {
+  transform: scale(1.1);
+}
+
+.showTime {
+  border: 4px solid black;
+  border-radius: 16px;
+  background-color: whitesmoke;
+  font-size: 32px;
+  padding: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.showTime p {
+  letter-spacing: 4px;
+}
+
+.numCarrot {
+  border: 5px solid black;
+  font-size: 50px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  font-weight: 700;
+  color: white;
+  outline: none;
+}
+
+.gameField {
+  position: relative;
+  background-color: transparent;
+  width: 95%;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.gameField img {
+  position: absolute;
+}
+
+.notice {
+  background-color: white;
+  width: 450px;
+  height: 200px;
+  margin: 200px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: calc(30%);
+  left: calc(50% - 225px);
+}
+
+.btnRedo {
+  outline: none;
+  cursor: pointer;
+  background-color: beige;
+  font-size: 40px;
+  padding: 10px 20px;
+  border: 4px solid black;
+  border-radius: 16px;
+  transition: transform 150ms ease-in;
+}
+
+.btnRedo:hover {
+  transform: scale(1.1);
+}
+
+.msg {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.none {
+  display: none;
+}
+
+.bug {
+  z-index: 0;
+}
+
+.carrot {
+  transition: transform linear;
+}
+
+.carrot:hover {
+  transform: scale(1.1);
+}
